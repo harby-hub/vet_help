@@ -1,6 +1,10 @@
 import './assets/main.css'
+import ApplicationFile from './App.vue'
+import plugins         from './plugins'
+import { createApp }   from 'vue'
 
-import { createApp } from 'vue'
-import App from './App.vue'
+const Application = createApp( ApplicationFile ) 
 
-createApp(App).mount('#application')
+plugins.map( async fun => await fun( Application ) )
+
+Application.mount( '#application' ) 
