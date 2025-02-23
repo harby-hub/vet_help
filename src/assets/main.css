@@ -1,0 +1,36 @@
+@import "tailwindcss";
+@import './base.css';
+
+@font-face {
+    font-family: 'PlusJakartaSans';
+    src: url('./Fonts/PlusJakartaSans-SemiBold.ttf') format('truetype');
+    font-weight: 700 900 ;
+}
+@font-face {
+    font-family: 'PlusJakartaSans';
+    src: url('./Fonts/PlusJakartaSans-Medium.ttf') format('truetype');
+    font-weight: 400 600;
+}
+@font-face {
+    font-family: 'PlusJakartaSans';
+    src: url('./Fonts/PlusJakartaSans-Regular.ttf') format('truetype');
+    font-weight: 100 300;
+}
+
+@font-face {
+    font-family: 'calibre';
+    src: url("./Fonts/CALIBRE-BOLD.ttf") format("truetype");
+}
+
+@custom-variant dark (&:where(.dark, .dark *));
+@custom-variant arabic (&:where(.arabic, .arabic *));
+
+@theme {
+    --color-headline: #f0562b;
+}
+
+@layer components {
+    .headline {
+        color: var(--color-headline);
+    }
+}

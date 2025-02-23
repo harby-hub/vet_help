@@ -1,0 +1,59 @@
+/* :root {
+  --color-prime-50: #9a1e61;
+  --color-prime-100: oklch(0.936 0.032 17.717);
+  --color-prime-200: oklch(0.885 0.062 18.334);
+  --color-prime-300: oklch(0.808 0.114 19.571);
+  --color-prime-400: oklch(0.704 0.191 22.216);
+  --color-prime-500: oklch(0.637 0.237 25.331);
+  --color-prime-600: oklch(0.577 0.245 27.325);
+  --color-prime-700: oklch(0.505 0.213 27.518);
+  --color-prime-800: oklch(0.444 0.177 26.899);
+  --color-prime-900: oklch(0.396 0.141 25.723);
+  --color-prime-950: oklch(0.258 0.092 26.042);
+}
+.text-prime-50  { color: var( --color-prime-50  ) ; }
+.text-prime-100 { color: var( --color-prime-100 ) ; }
+.text-prime-200 { color: var( --color-prime-200 ) ; }
+.text-prime-300 { color: var( --color-prime-300 ) ; }
+.text-prime-400 { color: var( --color-prime-400 ) ; }
+.text-prime-500 { color: var( --color-prime-500 ) ; }
+.text-prime-600 { color: var( --color-prime-600 ) ; }
+.text-prime-700 { color: var( --color-prime-700 ) ; }
+.text-prime-800 { color: var( --color-prime-800 ) ; }
+.text-prime-900 { color: var( --color-prime-900 ) ; }
+.text-prime-950 { color: var( --color-prime-950 ) ; }
+.bg-prime-50  { background-color: var( --color-prime-50  ) ; }
+.bg-prime-100 { background-color: var( --color-prime-100 ) ; }
+.bg-prime-200 { background-color: var( --color-prime-200 ) ; }
+.bg-prime-300 { background-color: var( --color-prime-300 ) ; }
+.bg-prime-400 { background-color: var( --color-prime-400 ) ; }
+.bg-prime-500 { background-color: var( --color-prime-500 ) ; }
+.bg-prime-600 { background-color: var( --color-prime-600 ) ; }
+.bg-prime-700 { background-color: var( --color-prime-700 ) ; }
+.bg-prime-800 { background-color: var( --color-prime-800 ) ; }
+.bg-prime-900 { background-color: var( --color-prime-900 ) ; }
+.bg-prime-950 { background-color: var( --color-prime-950 ) ; } */
+
+body {
+  font-weight: 900;
+  font-family:
+    PlusJakartaSans ,
+    calibre ,
+    Inter,
+    -apple-system,
+    BlinkMacSystemFont,
+    'Segoe UI',
+    Roboto,
+    Oxygen,
+    Ubuntu,
+    Cantarell,
+    'Fira Sans',
+    'Droid Sans',
+    'Helvetica Neue',
+    sans-serif;
+}
+
+html, 
+body , #application{
+  @apply h-full
+}
