@@ -1,0 +1,259 @@
+{
+    "landing_page": {
+        "variables": {
+            "map"               : "https://maps.app.goo.gl/LTM12iKrnx6UoR97A",
+            "facebook"          : "https://www.facebook.com/vet.help57",
+            "whatsapp"          : "https://api.whatsapp.com/send?phone=00201126291657",
+            "messenger"         : "https://www.facebook.com/messages/t/1409197379222330",
+            "title"             : "vet help clinic",
+            "phone"             : "01126291657",
+            "en_address"        : "Mohandessin Branch – 45 Ahmed Orabi Street, Giza",
+            "ar_address"        : "45 ش أحمد عرابي - المهندسين",
+            "main_btn_left_ar"  : "دردشة علي Whatsapp",
+            "main_btn_left_en"  : "Chat On Whatsapp",
+            "main_btn_right_ar" : "اتصل بنا 24/7",
+            "main_btn_right_en" : "Call Us ( 24/7 Available )",
+            "footer"            : "&copy; 2024 vet help Clinic, INC. ALL RIGHTS RESERVED" , 
+            "Instagram"         : "https://www.instagram.com/vethelp57" ,
+            "sheet"             : "https://script.google.com/macros/s/AKfycbyDjoPR-tqc-DE-uV10gr_N_AzraoRD-BTjg_3kII8WV3yyzzdSYbdLkO92AK_YpNTKDA/exec" ,
+            "mobilePrifx" : [
+                { "is_active" : true , "icon" : "🇪🇬" , "code" : "+2"   , "value" : "002"   } ,
+                { "is_active" : true , "icon" : "🇸🇦" , "code" : "+966" , "value" : "00966" }
+            ]
+        },
+        "landing_page": {
+            "sections": [
+                {
+                    "type" : "heros" ,
+                    "is_active" : true ,
+                    "translate": {
+                        "en" : {
+                            "name" : "Home" ,
+                            "heros_title" : "We Care with Love and Attention" ,
+                            "heros_description" : "At Vet Help, We fully understand that your pet is your closest companion, and their pain brings you sorrow. That’s why we nurture them, care for every detail, and feel their pain as if they were part of our own family." ,
+                            "heros_btn_left" : "Get In Touch",
+                            "heros_btn_right" : "View Location"
+                        },
+                        "ar" : {
+                            "name" : "الرئيسية" ,
+                            "heros_title" : "نرعى أليفك بكل حب ورعاية" ,
+                            "heros_description" : "في عيادة Vet Help, نُدرك تمامًا أن أليفك هو أقرب أصدقائك، وأن ألمه يشعرك بالحزن لذلك نرعاه ونهتم بكل تفاصيله، ونشعربألمه كأنه جزء من عائلتنا",
+                            "heros_btn_left" : "تواصل معنا",
+                            "heros_btn_right" : "شاهد الموقع"
+                        }
+                    }
+                },
+                {
+                    "type" : "brochure" ,
+                    "is_active" : true ,
+                    "translate": {
+                        "en" : {
+                            "name" : "Who We Are" ,
+                            "brochure_headline" : "WHO WE ARE" ,
+                            "brochure_title" : "The Best Care Your Pet Deserves!" , 
+                            "brochure_image" : "Diagonsis_WhoWeAre.png" , 
+                            "brochure_description" : "At Vet Help, we provide world-class veterinary care because your pet's health is our responsibility." ,
+                            "brochure_list" : [
+                                { "icon" : "Certificate" , "text" : "Certified veterinarians with Canadian board accreditation." } ,
+                                { "icon" : "MedicalSuit" , "text" : "State-of-the-art medical equipment for precise diagnosis andeffective treatment." } ,
+                                { "icon" : "SurgicalTool" , "text" : "Fully equipped operating rooms including Inhalation anesthesia suitable for all ages with no side effects." } ,
+                                { "icon" : "ExpertSurgeon" , "text" : "Expert surgeons for cosmetic procedures." } ,
+                                { "icon" : "Stethoscope" , "text" : "24-hour inpatient rooms with continuous medical supervision." } ,
+                                { "icon" : "Emergency274" , "text" : "24/7 customer service to support Emergency cases." } 
+                            ],
+                            "brochure_btn_left" : "Get In Touch",
+                            "brochure_btn_right" : "View Location"
+                        } ,
+                        "ar" : {
+                            "name" : "من نحن",
+                            "brochure_headLine" : "من نحن" ,
+                            "brochure_title" : "افضل عناية يستحقها أليفك معنا" , 
+                            "brochure_image" : "Diagonsis_WhoWeAre.png" , 
+                            "brochure_description" : "في Vet Help، نقدم رعاية بيطرية بمواصفات عالمية، لأن صحة أليفك مسؤوليتنا" ,
+                            "brochure_list" : [
+                                { "icon" : "Certificate" , "text" : "أطباء معتمدون حاصلون على البورد الكندى" } ,
+                                { "icon" : "MedicalSuit" , "text" : "أحدث الأجهزة الطبية لتشخيص دقيق وعلاج فعال" } ,
+                                { "icon" : "SurgicalTool" , "text" : "جهاز تخدير الاستنشاقي يناسب جميع الأعمار ولا يسبب أي آثار جانبية" } ,
+                                { "icon" : "ExpertSurgeon" , "text" : "غرف عمليات مُجهزة مع فريق جراحين للجراحات التجميلية" } ,
+                                { "icon" : "Stethoscope" , "text" : "غرف إقامة 24 ساعة مع متابعة طبية" } ,
+                                { "icon" : "Emergency274" , "text" : "خدمة عملاء على مدار الساعة 7\\24" } 
+                            ],
+                            "brochure_btn_left" : "تواصل معنا",
+                            "brochure_btn_right" : "شاهد الموقع"
+                        }
+                    }
+                } ,
+                {
+                    "type" : "services" ,
+                    "is_active" : true ,
+                    "translate": {
+                        "en" : {
+                            "name" : "Services" ,
+                            "services_headline" : "Services" ,
+                            "services_title" : "24/7 Care for Your Beloved Pet" ,
+                            "services_description" : "We care about your pet’s well-being and provide medical services in a loving and reassuring environment." ,
+                            "services_services" : [
+                                { "is_active" : true , "icon" : "PreventiveVaccination" , "title" : "Preventive Vaccinations"                  , "description" : "Protect your pet from diseases with essential shots."                } ,
+                                { "is_active" : true , "icon" : "FullBoardingService"   , "title" : "Full Boarding Services"                   , "description" : "Give your pet a safe and comfortable stay."                          } ,
+                                { "is_active" : true , "icon" : "CosmoticSurgeries"     , "title" : "Cosmetic Surgeries"                       , "description" : "Safe enhancements for your pet’s appearance."                        } ,
+                                { "is_active" : true , "icon" : "HomeVisits"            , "title" : "Home Visits"                              , "description" : "Quality veterinary care at your doorstep for comfort."               } ,
+                                { "is_active" : true , "icon" : "DiagnosticImaging"     , "title" : "Diagnostic Imaging (X-rays & Ultrasound)" , "description" : "Get accurate insights into your pet’s health with advanced imaging." } ,
+                                { "is_active" : true , "icon" : "DentalCare"            , "title" : "Dental Care"                              , "description" : "Keep your pet’s teeth clean and healthy."                            } ,
+                                { "is_active" : true , "icon" : "MedicalDiagnosis"      , "title" : "Medical Diagnostics"                      , "description" : "Detect health issues early with comprehensive checkups."             } ,
+                                { "is_active" : true , "icon" : "CheckupandAssessments" , "title" : "Check-ups & Assessments"                  , "description" : "Regular health evaluations for early issue detection."               } ,
+                                { "is_active" : true , "icon" : "SurgicalProcedures"    , "title" : "Surgical Procedures"                      , "description" : "Advanced treatments for various medical needs."                      } ,
+                                { "is_active" : true , "icon" : "PersonalizedCare"      , "title" : "Personalized Care (routine and care)"     , "description" : "Tailored treatments to meet your pet’s unique needs."                } ,
+                                { "is_active" : true , "icon" : "PetPassportIssuance"   , "title" : "Pet Passports Issuance"                   , "description" : "Travel hassle-free with official pet documentation."                 } ,
+                                { "is_active" : true , "icon" : "BoneSurgeries"         , "title" : "Orthopedic Surgeries"                     , "description" : "Expert care for bone and joint conditions."                          }
+                            ],
+                            "services_btn_show_more" : "show more" ,
+                            "services_btn_show_Less" : "View less"
+                        } ,
+                        "ar" : {
+                            "name" : "الخدمات",
+                            "services_headline" : "الخدمات" ,
+                            "services_title" : "خدمات العناية الشاملة لصديقك الأليف على مدار الساعة" ,
+                            "services_description" : "نهتم بمشاعر أليفك ونوفر له الخدمات العلاجية في بيئة مليئة بالحب والطمأنينة" ,
+                            "services_services" : [
+                                { "is_active" : true , "icon" : "PreventiveVaccination" , "title" : "التطعيمات الوقائية"                , "description" : "احمي حيوانك الأليف من الأمراض مع الطلقات الأساسية."                } ,
+                                { "is_active" : true , "icon" : "FullBoardingService"   , "title" : "الإقامة الكاملة"                   , "description" : "امنح حيوانك الأليف إقامة آمنة ومريحة."                             } ,
+                                { "is_active" : true , "icon" : "CosmoticSurgeries"     , "title" : "الجراحات التجميلية"                , "description" : "تحسينات آمنة لمظهر حيوانك الأليف."                                 } ,
+                                { "is_active" : true , "icon" : "HomeVisits"            , "title" : "الزيارات المنزلية"                 , "description" : "رعاية بيطرية عالية الجودة على عتبة منزلك من أجل الراحة."           } ,
+                                { "is_active" : true , "icon" : "DiagnosticImaging"     , "title" : "الأشعة التشخيصية"                  , "description" : "احصل على رؤى دقيقة حول صحة حيوانك الأليف من خلال التصوير المتقدم." } ,
+                                { "is_active" : true , "icon" : "DentalCare"            , "title" : "رعاية الأسنان"                     , "description" : "حافظ على أسنان حيوانك الأليف نظيفة وصحية."                         } ,
+                                { "is_active" : true , "icon" : "MedicalDiagnosis"      , "title" : "تحاليل طبية"                       , "description" : "اكتشاف المشكلات الصحية مبكرًا من خلال الفحوصات الشاملة."           } ,
+                                { "is_active" : true , "icon" : "CheckupandAssessments" , "title" : "الكشف والاطمئنان"                  , "description" : "تقييمات صحية منتظمة للكشف المبكرعن المشكلة."                       } ,
+                                { "is_active" : true , "icon" : "SurgicalProcedures"    , "title" : "العمليات الجراحية"                 , "description" : "علاجات متقدمة لمختلف الاحتياجات الطبية."                           } ,
+                                { "is_active" : true , "icon" : "PersonalizedCare"      , "title" : "العناية الشخصية (تنظيف عادي وطبي)" , "description" : "علاجات مصممة لتلبية الاحتياجات الفريدة لحيوانك الأليف."            } ,
+                                { "is_active" : true , "icon" : "PetPassportIssuance"   , "title" : "إصدار جوازات السفر"                , "description" : "السفر بدون متاعب مع وثائق الحيوانات الأليفة الرسمية."              } ,
+                                { "is_active" : true , "icon" : "BoneSurgeries"         , "title" : "جراحات العظام"                     , "description" : "رعاية الخبراء لحالات العظام والمفاصل."                             }
+                            ],
+                            "services_btn_show_more" : "عرض المزيد" ,
+                            "services_btn_show_Less" : "عرض أقل"
+                        }
+                    }
+                } ,
+                {
+                    "type" : "counters" ,
+                    "is_active" : true ,
+                    "translate": {
+                        "en" : {
+                            "name" : "Why Vet Help" ,
+                            "counters_headline" : "WHY VET HELP" ,
+                            "counters_title" : "The Perfect Choice for Your Beloved Pet" ,
+                            "counters_description" : "Achievements We Take Pride in at Vet Help." ,
+                            "counters_image" : "Diagonsis_WhoWeAre.png" ,
+                            "counters_counters" : [
+                                { "is_active" : true , "counter" : "+ 10,000" , "text" : "Pets We Cared Over"                     } ,
+                                { "is_active" : true , "counter" : "+ 2,000"  , "text" : "Successful Surgeries"                   } ,
+                                { "is_active" : true , "counter" : "+ 1,000"  , "text" : "Blood Test Performed"                   } ,
+                                { "is_active" : true , "counter" : "+ 300"    , "text" : "Saved Pets"                             } ,
+                                { "is_active" : true , "counter" : "+ 300"    , "text" : "Diagnostic Imaging Tests & Ultrasounds" }
+                            ] ,
+                            "counters_btn_left" : "Get In Touch",
+                            "counters_btn_right" : "View Location"
+                        } ,
+                        "ar" : {
+                            "name" : "لماذا نحن" ,
+                            "counters_headline" : "لماذا نحن" ,
+                            "counters_title" : "الاختيار المثالي لصديقك الأليف" ,
+                            "counters_description" : "إنجازات نفتخر بها في Vet Help." ,
+                            "counters_image" : "Diagonsis_WhoWeAre.png" ,
+                            "counters_counters" : [
+                                { "is_active" : true , "counter" : "10,000 +" , "text" : "أليف ساعدناهم"       } ,
+                                { "is_active" : true , "counter" : "2,000 +"  , "text" : "عملية جراحية"        } ,
+                                { "is_active" : true , "counter" : "1,000 +"  , "text" : "تحليل دم"            } ,
+                                { "is_active" : true , "counter" : "300 +"    , "text" : "أليف أنقذناه"        } ,
+                                { "is_active" : true , "counter" : "300 +"    , "text" : "أشعة تشخيصية وسونار" }
+                            ] ,
+                            "counters_btn_left" : "تواصل معنا",
+                            "counters_btn_right" : "شاهد الموقع"
+                        }
+                    }
+                } ,
+                {
+                    "type" : "reviews" ,
+                    "is_active" : true ,
+                    "translate": {
+                        "en" : {
+                            "name" : "Reviews" ,
+                            "reviews_headline" : "Reviews" ,
+                            "reviews_title" : "Hear it from Vet Help Friends" ,
+                            "reviews_reviews" : [
+                                { "is_active" : true , "stars" : 5 , "name" : "Rehab Elsharkawy" , "text" : "I rushed my beloved pet to the hospital in critical condition—severe poisoning, nonstop regurgitation, diarrhea, tremors, and pneumonia. I feared for his life as he worsened. With daily visits, continuous treatments, and the care of amazing doctors, he slowly recovered. Grateful beyond words!"                                                                                                 } ,
+                                { "is_active" : true , "stars" : 5 , "name" : "Hager Hassan"     , "text" : "Praise be to God, Lord of the Worlds, my cat has lost weight and is still looking goodI really want to thank Dr. Noha, the utmost in good attitude and politeness. She tolerated me when I was fanatical. My cat had severe allergies to the point of his skin. My foal was as old as they were. They treated the animal with mercy and were very careful."                                            } ,
+                                { "is_active" : true , "stars" : 5 , "name" : "Bahira Samaan"    , "text" : "I was searching for a vet to come at home to check my dog as we couldn't move it as she stopped eating , Dr Ahmed replied our call and arrived at home to check it and even took it with him to the clinic to be able to make the necessary X rays and blood test.  he kept it at his side to follow up on it and the medication till I received it again after 6 days healthy and in good condition." } ,
+                                { "is_active" : true , "stars" : 5 , "name" : "Mariem Sabry"     , "text" : "I was searching for a vet to come at home to check my dog as we couldn't move it as she stopped eating , Dr Ahmed replied our call and arrived at home to check it and even took it with him to the clinic to be able to make the necessary X rays and blood test.  he kept it at his side to follow up on it and the medication till I received it again after 6 days healthy and in good condition." } ,
+                                { "is_active" : true , "stars" : 5 , "name" : "Rehab Farouk"     , "text" : "Good evening, I honestly do not know how to thank you for your standing with me and Fellah, and everyone who is with you is all good, especially Dr. Ahmed, and God willing, you will return safely, and Fella and I will thank you for your good taste, mercy, and humanity, and may God compensate for your trouble with goodness, God willing."                                                     } ,
+                                { "is_active" : true , "stars" : 5 , "name" : "Ahmed Mohamed"    , "text" : "They are Very professional doctors, and very helpful. They treated our pets with a lot of kind and love. I would recommend the vet for everyone."                                                                                                                                                                                                                                                      } ,
+                                { "is_active" : true , "stars" : 5 , "name" : "Rehab Elsharkawy" , "text" : "I rushed my beloved pet to the hospital in critical condition—severe poisoning, nonstop regurgitation, diarrhea, tremors, and pneumonia. I feared for his life as he worsened. With daily visits, continuous treatments, and the care of amazing doctors, he slowly recovered. Grateful beyond words!"                                                                                                 } ,
+                                { "is_active" : true , "stars" : 5 , "name" : "Hager Hassan"     , "text" : "Praise be to God, Lord of the Worlds, my cat has lost weight and is still looking goodI really want to thank Dr. Noha, the utmost in good attitude and politeness. She tolerated me when I was fanatical. My cat had severe allergies to the point of his skin. My foal was as old as they were. They treated the animal with mercy and were very careful."                                            } ,
+                                { "is_active" : true , "stars" : 5 , "name" : "Bahira Samaan"    , "text" : "I was searching for a vet to come at home to check my dog as we couldn't move it as she stopped eating , Dr Ahmed replied our call and arrived at home to check it and even took it with him to the clinic to be able to make the necessary X rays and blood test.  he kept it at his side to follow up on it and the medication till I received it again after 6 days healthy and in good condition." } ,
+                                { "is_active" : true , "stars" : 5 , "name" : "Mariem Sabry"     , "text" : "I was searching for a vet to come at home to check my dog as we couldn't move it as she stopped eating , Dr Ahmed replied our call and arrived at home to check it and even took it with him to the clinic to be able to make the necessary X rays and blood test.  he kept it at his side to follow up on it and the medication till I received it again after 6 days healthy and in good condition." } ,
+                                { "is_active" : true , "stars" : 5 , "name" : "Rehab Farouk"     , "text" : "Good evening, I honestly do not know how to thank you for your standing with me and Fellah, and everyone who is with you is all good, especially Dr. Ahmed, and God willing, you will return safely, and Fella and I will thank you for your good taste, mercy, and humanity, and may God compensate for your trouble with goodness, God willing."                                                     } ,
+                                { "is_active" : true , "stars" : 5 , "name" : "Ahmed Mohamed"    , "text" : "They are Very professional doctors, and very helpful. They treated our pets with a lot of kind and love. I would recommend the vet for everyone."                                                                                                                                                                                                                                                      }
+                            ] ,
+                            "reviews_btn_show_more" : "show more" ,
+                            "reviews_btn_show_Less" : "View less"
+                        } ,
+                        "ar" : {
+                            "name" : "آراء العملاء" ,
+                            "reviews_headline" : "آراء العملاء" ,
+                            "reviews_title" : "اسمعها من أصدقاء Vet Help" ,
+                            "reviews_reviews" : [
+                                { "is_active" : true , "stars" : 5 , "name" : "Rehab Elsharkawy" , "text" : "جريت بحيواني الأليف المستشفى وهو في حالة خطيرة – تسمم شديد، ترجيع مستمر، إسهال، رعشة، والتهاب رئوي. كنت خايف على حياته وهو حالته بتسوء. لكن مع الزيارات اليومية، والعلاج المستمر، ورعاية الدكاترة الرائعين، بدأ يتحسن شوية بشوية. ممتن ليهم فوق ما أقدر أوصف!"                                                                                                                                                           } ,
+                                { "is_active" : true , "stars" : 5 , "name" : "Hager Hassan"     , "text" : "الحمدلله رب العالمين القط بتاعي خف وبقي زي الفلعايزه اشكر دكتور نهي بجد قمة الذوق والادب اتحملتني وانا متعصبه القط بتاعي كان عنده حساسيه شديده لدرجة جلده كان مهري قد اي بجد بيعاملوا الحيوان برحمة وبيتعاملوا بحذر شديد لانه سنه كبير وكمان بيراعوا حالة صاحبهبقالي سنه بتعامل معاهم ولا مره ندمتكل ال ف العياده بجد ممتازين ومحترمين"                                                                                  } ,
+                                { "is_active" : true , "stars" : 5 , "name" : "Bahira Samaan"    , "text" : "كنت بدوّر على دكتور بيطري ييجي البيت يكشف على كلبي، عشان ماكنّاش عارفين نحركها بعد ما بطّلت تاكل. دكتور أحمد ردّ على مكالمتنا وجِه البيت عشان يكشف عليها، وبعدها أخدها معاه العيادة عشان يعمل لها أشعة وتحاليل الدم اللازمة. فضِل متابع حالتها وادّاها العلاج لحد ما رجّعهالي بعد 6 أيام وهي بصحة كويسة وفي حالة تمام"                                                                                                   } ,
+                                { "is_active" : true , "stars" : 5 , "name" : "Mariem Sabry"     , "text" : "عياده ممتازه حقيقي من اول نضافه المكان والتعقيم و ده اهم حاجه في اي عياده بيطريه.للتعامل الذوق والاهتمام بالاليف بشكل شخصي مش بس أنه مجرد حاله أو شغل و شوفت ده بشكل واضح جدا حقيقي..ده غير أن المكان مجهز بكل حاجه وغالباً ده كان نادرا م بيكون موجود بالذات في محيط المنطقه اللي حاولت كتير ادور ع مكان يكون كويس و آمن كده ومكنتش بلاقي ف حقيقي كل الشكر والتقدير ل دكتور احمد مع تمنياتي بمزيد من التفوق والنجاح ♥️" } ,
+                                { "is_active" : true , "stars" : 5 , "name" : "Rehab Farouk"     , "text" : "مساء الخير انا بصراحة مش عارفه اشكر حضرتك ازاي على وقفتك معايا ومع فله وكل اللي عند حضرتك كلهم ذوق وخصوصآ دكتور احمد وان شاء الله ترجع بالسلامة ونيجي نشكرك انا وفله على ذوقك ورحمتك  وانسانيتك وربنا يعوض تعبك خير ان شاء الله"                                                                                                                                                                                         } ,
+                                { "is_active" : true , "stars" : 5 , "name" : "Ahmed Mohamed"    , "text" : "دكاترة في منتهى الاحترافية ومتعاونين جدًا. عاملوا حيواناتنا بطيبة وحب كبير. أنصح أي حد بالعيادة دي!"                                                                                                                                                                                                                                                                                                                     },
+                                { "is_active" : true , "stars" : 5 , "name" : "Rehab Elsharkawy" , "text" : "جريت بحيواني الأليف المستشفى وهو في حالة خطيرة – تسمم شديد، ترجيع مستمر، إسهال، رعشة، والتهاب رئوي. كنت خايف على حياته وهو حالته بتسوء. لكن مع الزيارات اليومية، والعلاج المستمر، ورعاية الدكاترة الرائعين، بدأ يتحسن شوية بشوية. ممتن ليهم فوق ما أقدر أوصف!"                                                                                                                                                           } ,
+                                { "is_active" : true , "stars" : 5 , "name" : "Hager Hassan"     , "text" : "الحمدلله رب العالمين القط بتاعي خف وبقي زي الفلعايزه اشكر دكتور نهي بجد قمة الذوق والادب اتحملتني وانا متعصبه القط بتاعي كان عنده حساسيه شديده لدرجة جلده كان مهري قد اي بجد بيعاملوا الحيوان برحمة وبيتعاملوا بحذر شديد لانه سنه كبير وكمان بيراعوا حالة صاحبهبقالي سنه بتعامل معاهم ولا مره ندمتكل ال ف العياده بجد ممتازين ومحترمين"                                                                                  } ,
+                                { "is_active" : true , "stars" : 5 , "name" : "Bahira Samaan"    , "text" : "كنت بدوّر على دكتور بيطري ييجي البيت يكشف على كلبي، عشان ماكنّاش عارفين نحركها بعد ما بطّلت تاكل. دكتور أحمد ردّ على مكالمتنا وجِه البيت عشان يكشف عليها، وبعدها أخدها معاه العيادة عشان يعمل لها أشعة وتحاليل الدم اللازمة. فضِل متابع حالتها وادّاها العلاج لحد ما رجّعهالي بعد 6 أيام وهي بصحة كويسة وفي حالة تمام"                                                                                                   } ,
+                                { "is_active" : true , "stars" : 5 , "name" : "Mariem Sabry"     , "text" : "عياده ممتازه حقيقي من اول نضافه المكان والتعقيم و ده اهم حاجه في اي عياده بيطريه.للتعامل الذوق والاهتمام بالاليف بشكل شخصي مش بس أنه مجرد حاله أو شغل و شوفت ده بشكل واضح جدا حقيقي..ده غير أن المكان مجهز بكل حاجه وغالباً ده كان نادرا م بيكون موجود بالذات في محيط المنطقه اللي حاولت كتير ادور ع مكان يكون كويس و آمن كده ومكنتش بلاقي ف حقيقي كل الشكر والتقدير ل دكتور احمد مع تمنياتي بمزيد من التفوق والنجاح ♥️" } ,
+                                { "is_active" : true , "stars" : 5 , "name" : "Rehab Farouk"     , "text" : "مساء الخير انا بصراحة مش عارفه اشكر حضرتك ازاي على وقفتك معايا ومع فله وكل اللي عند حضرتك كلهم ذوق وخصوصآ دكتور احمد وان شاء الله ترجع بالسلامة ونيجي نشكرك انا وفله على ذوقك ورحمتك  وانسانيتك وربنا يعوض تعبك خير ان شاء الله"                                                                                                                                                                                         } ,
+                                { "is_active" : true , "stars" : 5 , "name" : "Ahmed Mohamed"    , "text" : "دكاترة في منتهى الاحترافية ومتعاونين جدًا. عاملوا حيواناتنا بطيبة وحب كبير. أنصح أي حد بالعيادة دي!"                                                                                                                                                                                                                                                                                                                     }
+                            ] ,
+                            "reviews_btn_show_more" : "عرض المزيد" ,
+                            "reviews_btn_show_Less" : "عرض أقل"
+                        }
+                    }
+                } ,
+                {
+                    "type" : "contactus" ,
+                    "is_active" : true ,
+                    "translate": {
+                        "en" : {
+                            "name" : "Get In Touch" ,
+                            "contactus_direction" : "ltr" ,
+                            "contactus_headline" : "GET IN TOUCH" ,
+                            "contactus_title" : "Let’s Contactus Today" ,
+                            "contactus_description" : "Vet Help Clinic provides expert veterinary care to keep your pets healthy and happy. From preventive treatments to advanced surgeries, our dedicated team ensures the best care for your furry friends. Visit us for compassionate, professional pet care!" ,
+                            "contactus_field" : {
+                                "full_name" : "Full Name" ,
+                                "mobile_number" : "Mobile Number" ,
+                                "select_service" : "Select Service" ,
+                                "message" : "Message"
+                            },
+                            "contactus_btn_send_message" : "Send Message"
+                        } ,
+                        "ar" : {
+                            "name" : "تواصل معنا" ,
+                            "contactus_direction" : "rtl" ,
+                            "contactus_headline" : "تواصل معنا" ,
+                            "contactus_title" : "دعنا نتواصل اليوم" ,
+                            "contactus_description" : "توفرعيادة مساعدة الطبيب البيطري رعاية بيطرية متخصصة للحفاظ على صحة حيواناتك الأليفة وسعادتها. من العلاجات الوقائية إلى العمليات الجراحية المتقدمة، يضمن فريقنا المتفاني أفضل رعاية لأصدقائك ذوي الفراء. قم بزيارتنا من أجل رعاية الحيوانات الأليفة الرحيمة والمهنية" ,
+                            "contactus_field" : {
+                                "full_name" : "الإسم الكامل" ,
+                                "mobile_number" : "رقم المحمول" ,
+                                "select_service" : "اختر الخدمة" ,
+                                "message" : "الرسالة"
+                            } ,
+                            "contactus_btn_send_message" : "ارسل الرسالة"
+                        }
+                    }
+                }
+            ]
+        }
+    }
+}

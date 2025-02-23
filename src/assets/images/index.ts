@@ -1,0 +1,6 @@
+export { default as 'Cat_Hero.png'           } from './Cat_Hero.png'
+export { default as 'Diagonsis_WhoWeAre.png' } from './Diagonsis_WhoWeAre.png'
+export { default as 'Doh_Hero.png'           } from './Doh_Hero.png'
+export { default as 'Heart_Hero.png'         } from './Heart_Hero.png'
+export { default as 'logo.png'               } from './logo.png'
+export { default as 'Tail_Hero.png'          } from './Tail_Hero.png'

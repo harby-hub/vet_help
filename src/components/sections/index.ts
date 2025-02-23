@@ -1,0 +1,7 @@
+export { default as empty     } from './empty.vue'
+export { default as heros     } from './heros.vue'
+export { default as brochure  } from './brochure.vue'
+export { default as services  } from './services.vue'
+export { default as counters  } from './counters.vue'
+export { default as reviews   } from './reviews.vue'
+export { default as contactus } from './contactus.vue'
