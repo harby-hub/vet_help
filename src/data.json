@@ -1,6 +1,8 @@
 {
     "landing_page": {
         "variables": {
+            "enable_dark_mode"  : false ,
+            "enable_title"      : false ,
             "map"               : "https://maps.app.goo.gl/LTM12iKrnx6UoR97A",
             "facebook"          : "https://www.facebook.com/vet.help57",
             "whatsapp"          : "https://api.whatsapp.com/send?phone=00201126291657",

@@ -72,7 +72,7 @@
                 </div>
             </div>
         </div>
-        <div class="grid grid-cols-1 gap-5 p-10 bg-pink-700 rounded-[20px] lg:rounded-[35px]">
+        <div class="grid grid-cols-1 gap-5 p-10 bg-Primary-800 rounded-[20px] lg:rounded-[35px]">
             <div> <Input v-model="name" :placeholder="t( 'contactus_field.full_name' )" /> </div>
             <div class="flex gap-2" >
                 <div>
@@ -89,7 +89,7 @@
             </Select> </div>
             <div> <Input v-model="message" :placeholder="t( 'contactus_field.message' )" /> </div>
             
-            <Button @click="submit" data-outline="true" v-text="t( 'contactus_btn_send_message' )" />
+            <Button @click="submit" class="transparent" v-text="t( 'contactus_btn_send_message' )" />
         </div>
     </section>
 </template>

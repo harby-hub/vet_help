@@ -2,15 +2,15 @@
   import { Button } from '@/components/ui/button'
   import { FirestoreDatabase } from '@/plugins/firebase.ts'
   import { ref , watch , nextTick } from 'vue'
-  const data = ref( ) ;
+  const href = ref< string >( '#' ) ;
   watch( FirestoreDatabase , async ( newData ) => {
-    data.value = { }
+    href.value = '#'
     await nextTick( ) ;
-    data.value = newData.variables.map
+    href.value = newData.variables.map
   } )
-  data.value = FirestoreDatabase.value.variables.map
+  href.value = FirestoreDatabase.value.variables.map
 </script>
 
 <template>
-  <a :href="data"> <icon class="headline" name="MapPin" :size="20" />  <Button icon="MapPin" > <slot></slot> </Button> </a>
+  <Button as="a" :href="href" icon="MapPin" :nsize="30" > <slot></slot> </Button>
 </template>

@@ -19,10 +19,8 @@ const icon = computed(() => icons[props.name]);
 <template>
   <component
     :is="icon"
-    :style="{ 
-      height:size ,
-      width:size
-    }"
+      :height="size"
+      :width="size"
     :stroke-width="strokeWidth"
     :default-class="defaultClass"
   />

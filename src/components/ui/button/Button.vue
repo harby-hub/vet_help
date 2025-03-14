@@ -16,9 +16,10 @@ interface Props extends PrimitiveProps {
 }
 
 const props = withDefaults( defineProps< Props > ( ) , {
-  as   : 'button' ,
-  icon : null     ,
-  nsize : 25     ,
+  as      : 'button' ,
+  icon    : null     ,
+  nsize   : 25       ,
+  variant : 'default'
 } )
 </script>
 
@@ -26,27 +27,9 @@ const props = withDefaults( defineProps< Props > ( ) , {
   <Primitive
     :as="as"
     :as-child="asChild"
-    :class="cn( buttonVariants( { variant , size } ) , [
-      'rounded-full'      , 'cursor-pointer' ,
-      'px-4'              , 'py-8' ,
-
-      `bg-pink-700`                     , 'hover:bg-pink-800' ,
-      `data-[outline=true]:bg-pink-50` , 'data-[outline=true]:hover:bg-pink-200' ,
-
-      'text-base'                           , 'text-center' ,
-      'text-pink-50'                     , 'hover:text-pink-100',
-      'data-[outline=true]:text-pink-700' , 'data-[outline=true]:hover:text-pink-800',
-
-      'ring-1' ,
-      'ring-pink-50' , 'hover:ring-pink-100',
-      'data-[outline=true]:ring-pink-700' , 'data-[outline=true]:hover:ring-pink-900',
-
-      'focus:ring-2'      , 'focus:outline-none'     , 'focus:ring-pink-50' , 'data-[outline=true]:focus:ring-pink-900' ,
-      'dark:bg-pink-600'  , 'dark:hover:bg-pink-700' , 'dark:focus:text-pink-800'
-
-    ] , props.class)"
+    :class="cn( buttonVariants( { variant , size } ) , props.class)"
   >
-    <iconUi v-if="props.icon" :name="props.icon" :strokeWidth="3" :size="nsize" />
+    <iconUi v-if="props.icon" :name="props.icon" :strokeWidth="3" :size="props.nsize" />
     <slot></slot>
   </Primitive>
 </template>

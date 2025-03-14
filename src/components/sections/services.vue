@@ -21,13 +21,13 @@
             <template v-for="( item , index ) in tm( 'services_services' )">
                 <div v-if="item.is_active" class="mb-4 border-2 border-stone-300 rounded-2xl p-10 grid grid-cols-1 gap-2" :class="{ hidden : ( index >= 6 ? ishidden : false ) , 'text-left' : locale === 'en' , 'text-right' : locale === 'ar' }">
                     <component class="" :is="icons[item.icon]"/>
-                    <div class="text-base" v-text="item.title" />
-                    <div class="text-sm font-thin" v-text="item.description" />
+                    <div class="text-4xl font-bold md:font-normal md:text-base" v-text="item.title" />
+                    <div class="text-sm font-thin hidden md:flex" v-text="item.description" />
                 </div>
             </template>
         </div>
-        <div class="" >
-            <Button v-text="ishidden ? t( 'services_btn_show_more' ) : t( 'services_btn_show_Less' ) " @click="ishidden = ishidden === false ? true : false" />
+        <div class="flex items-center justify-center" >
+            <Button class="px-8 py-2" v-text="ishidden ? t( 'services_btn_show_more' ) : t( 'services_btn_show_Less' ) " @click="ishidden = ishidden === false ? true : false" />
         </div>
     </section>
 </template>

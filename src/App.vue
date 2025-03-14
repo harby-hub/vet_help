@@ -9,7 +9,7 @@ import { Button } from '@/components/ui/button'
 let data = ref( [ ] )
 
 watch( FirestoreDatabase , async ( newData ) => {
-    data.value = { }
+    data.value = [ ]
     await nextTick( ) ;
     data.value = newData.landing_page?.sections.filter( item => item.is_active )
 } )
@@ -21,7 +21,6 @@ const { t , locale } = useI18n({ useScope: 'global' , messages: {
     en : { direction : 'ltr' } ,
     ar : { direction : 'rtl' }
 } } ) 
-
 
 </script>
 
@@ -37,9 +36,9 @@ const { t , locale } = useI18n({ useScope: 'global' , messages: {
                 :variables = "FirestoreDatabase?.variables"
             /> </template>
             <nav class="fixed w-full z-20 bottom-20 start-0">
-                <div class="bg-orange-100 w-3/4 rounded-xl border-gray-200 dark:border-gray-600 dark:bg-gray-900 max-w-screen-xl grid grid-cols-2 gap-4 p-4 mx-auto items-center justify-between">
-                    <a :href="FirestoreDatabase?.variables.whatsapp"     ><Button class="w-full"> {{ locale == 'ar' ? FirestoreDatabase?.variables.main_btn_left_ar  : FirestoreDatabase?.variables.main_btn_left_en  }} </Button></a>
-                    <a :href="'tel:'+FirestoreDatabase?.variables.phone" ><Button class="w-full"> {{ locale == 'ar' ? FirestoreDatabase?.variables.main_btn_right_ar : FirestoreDatabase?.variables.main_btn_right_en }} </Button></a>
+                <div class="bg-Secondary-50 w-3/4 md:w-2/4 rounded-xl border-gray-200 dark:border-gray-600 dark:bg-gray-900 flex gap-4 p-4 md:px-8 mx-auto items-center">
+                    <Button as="a" class="lg:h-[75px] w-100 md:flex-1"          variant="default"   icon="Phone"         :href="'tel:'+FirestoreDatabase?.variables.phone" >{{locale == 'ar' ? FirestoreDatabase?.variables.main_btn_right_ar : FirestoreDatabase?.variables.main_btn_right_en}}</Button>
+                    <Button as="a" class="lg:h-[75px] w-15 flex-none md:flex-1" variant="Secondary" icon="MessageCircle" :href="FirestoreDatabase?.variables.whatsapp"     ><span class="hidden md:flex">{{locale == 'ar' ? FirestoreDatabase?.variables.main_btn_left_ar  : FirestoreDatabase?.variables.main_btn_left_en }}</span></Button>
                 </div>
             </nav>
             <footer class="w-full mt-40 text-center border-t pt-5" v-html="FirestoreDatabase?.variables?.footer" />

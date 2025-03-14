@@ -18,6 +18,7 @@ const { t , tm , locale } = useI18n( { useScope : 'global' , messages : props.tr
             </div>
             <div class="text-4xl lg:text-6xl font-[calibre]" v-text="t( 'brochure_title' )" />
             <div class="text-sm font-thin mb-8" v-text="t( 'brochure_description' )" />
+            <img class="lg:hidden sm:w-full rounded-[25px] overflow-hidden relative bg-cover bg-center" :src="importImage( t( 'brochure_image' ) )" />
             <div class="w-full">
                 <div class="w-full mb-4" v-for="( item , index ) in tm( 'brochure_list' )">
                     <div v-if="index != 0" class="mb-4 border-2 border-stone-300" ></div>
@@ -28,10 +29,9 @@ const { t , tm , locale } = useI18n( { useScope : 'global' , messages : props.tr
                 </div>
             </div>
             <div class="grid grid-cols-2 lg:grid-cols-3 gap-4" >
-                <ButtonContactus > {{ t( 'brochure_btn_left'  ) }} </ButtonContactus>
-                <ButtonMap       > {{ t( 'brochure_btn_right' ) }} </ButtonMap>
+                <ButtonContactus variant="default" > {{ t( 'brochure_btn_left'  ) }} </ButtonContactus>
+                <ButtonMap variant="transparentd" > {{ t( 'brochure_btn_right' ) }} </ButtonMap>
             </div>
-            <img class="lg:hidden sm:w-full rounded-[25px] overflow-hidden relative bg-cover bg-center" :src="importImage( t( 'brochure_image' ) )" />
         </div>
     </section>
 </template>

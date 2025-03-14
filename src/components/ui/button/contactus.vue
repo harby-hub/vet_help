@@ -3,17 +3,17 @@
   import { FirestoreDatabase } from '@/plugins/firebase.ts'
   import { ref , watch , nextTick } from 'vue'
   import { useI18n } from 'vue-i18n'
-  const { t , tm , locale } = useI18n( { useScope : 'global' } )
+  const { locale } = useI18n( { useScope : 'global' } )
 
-  const data = ref( '#' ) ;
+  const href = ref( '#' ) ;
   watch( FirestoreDatabase , async ( newData ) => {
-    data.value = '#'
+    href.value = '#'
     await nextTick( ) ;
-    data.value = ( '#contactus_' + newData.landing_page.sections.find(( element ) => element.type === 'contactus' ).translate[ locale.value ].name ).replace( / /ig , '_' )
+    href.value = ( '#contactus_' + newData.landing_page.sections.find(( element ) => element.type === 'contactus' ).translate[ locale.value ].name ).replace( / /ig , '_' )
   } )
-  data.value = ( '#contactus_' + FirestoreDatabase.value.landing_page.sections.find(( element ) => element.type === 'contactus' ).translate[ locale.value ].name ).replace( / /ig , '_' )
+  href.value = ( '#contactus_' + FirestoreDatabase.value.landing_page.sections.find(( element ) => element.type === 'contactus' ).translate[ locale.value ].name ).replace( / /ig , '_' )
 </script>
 
 <template>
-  <a :href="data"><Button class="w-full" data-outline="true" > <slot></slot> </Button></a>
+  <Button as="a" :href="href" variant="Secondary" > <slot></slot> </Button>
 </template>
