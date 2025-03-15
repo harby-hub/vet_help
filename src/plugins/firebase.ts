@@ -3,6 +3,7 @@ import { initializeApp } from 'firebase/app'
 import { getDatabase, ref as dbRef } from 'firebase/database'
 import { useDatabaseObject , VueFire , VueFireDatabaseOptionsAPI } from 'vuefire'
 import dataJson from  '@/data.json' 
+import { install } from "vue3-recaptcha-v2";
 
 interface data{ landing_page : {
     sections : Array< {
@@ -45,4 +46,8 @@ if( import.meta.env.PROD ) {
     watch( dataFirbase , ( newdata , old ) => FirestoreDatabase.value = newdata )
 } 
 
-export default async function( Application : any ) { }
+export default async function( Application : any ) {
+    Application.use(install, {
+        sitekey: "6LfrsfUqAAAAAEcZO4hKns0w3kwRsswvhsAnEx4D",
+    })
+}

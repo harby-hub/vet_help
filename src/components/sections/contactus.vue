@@ -47,6 +47,19 @@
             response
         )
     }
+    import { RecaptchaV2, useRecaptcha } from "vue3-recaptcha-v2";
+    const handleWidgetId = (widgetId: number) => {
+        console.log("Widget ID: ", widgetId);
+    };
+    const handleErrorCallback = () => {
+        console.log("Error callback");
+    };
+    const handleExpiredCallback = () => {
+        console.log("Expired callback");
+    };
+    const handleLoadCallback = (response: unknown) => {
+        console.log("Load callback", response);
+    };
 
     loudservices()
     watch( locale            , loudservices )
@@ -89,7 +102,14 @@
             </Select> </div>
             <div> <Input v-model="message" :placeholder="t( 'contactus_field.message' )" /> </div>
             
-            <Button @click="submit" class="transparent" v-text="t( 'contactus_btn_send_message' )" />
+            <RecaptchaV2
+                :sitekey="'6LfrsfUqAAAAAEcZO4hKns0w3kwRsswvhsAnEx4D'"
+                @widget-id="handleWidgetId"
+                @error-callback="handleErrorCallback"
+                @expired-callback="handleExpiredCallback"
+                @load-callback="handleLoadCallback"
+            ></RecaptchaV2>
+            <Button @click="btnShowverify" class="transparent" v-text="t( 'contactus_btn_send_message' )" />
         </div>
     </section>
 </template>
