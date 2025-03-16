@@ -14,6 +14,10 @@
     import { icon } from '@/components/ui/icon'
     import { FirestoreDatabase } from '@/plugins/firebase.ts'
     import type { Section } from '@/lib/interface'
+    import { Toaster } from '@/components/ui/toast'
+    import { useToast } from '@/components/ui/toast/use-toast'
+
+    const { toast } = useToast()
 
     const props = withDefaults(defineProps<Section>(), { translate: () => ({ en : { } , ar : { } }) , variables: () => ({ }) })
     const { t , tm , locale } = useI18n( { useScope : 'global' , messages : props.translate as any } )
@@ -30,6 +34,7 @@
         services.value = FirestoreDatabase.value.landing_page.sections.find(( element ) => element.type === 'services' ).translate[ locale.value ].services_services.filter( service => service.is_active ).map( service => service.title )
     }
     async function submit( ) {
+        if( check.value === false ) return false
         const response = await fetch( props.variables.sheet , {
             method: "POST",
             body: JSON.stringify([
@@ -39,6 +44,12 @@
                 message.value ,
             ])
         });
+        showbtn.value = false
+        toast({
+            title       : locale.value === 'en' ? 'thank you to communicate us' : 'شكرا لك على التواصل معنا' ,
+            description       : locale.value === 'en' ? 'our customer service , receive your message and we will send this message for clinic' : 'خدمة العملاء لدينا، استقبل رسالتك وسنقوم بإرسال هذه الرسالة إلى العيادة' ,
+        });
+
         console.log(
             name.value ,
             code.value.value + phone.value ,
@@ -48,6 +59,8 @@
         )
     }
     import { RecaptchaV2, useRecaptcha } from "vue3-recaptcha-v2";
+    const check = ref( false )
+    const showbtn = ref( true )
     const handleWidgetId = (widgetId: number) => {
         console.log("Widget ID: ", widgetId);
     };
@@ -59,6 +72,7 @@
     };
     const handleLoadCallback = (response: unknown) => {
         console.log("Load callback", response);
+        check.value = true
     };
 
     loudservices()
@@ -103,13 +117,13 @@
             <div> <Input v-model="message" :placeholder="t( 'contactus_field.message' )" /> </div>
             
             <RecaptchaV2
-                :sitekey="'6LfrsfUqAAAAAEcZO4hKns0w3kwRsswvhsAnEx4D'"
                 @widget-id="handleWidgetId"
                 @error-callback="handleErrorCallback"
                 @expired-callback="handleExpiredCallback"
                 @load-callback="handleLoadCallback"
             ></RecaptchaV2>
-            <Button @click="btnShowverify" class="transparent" v-text="t( 'contactus_btn_send_message' )" />
+            <Toaster />
+            <Button v-if="showbtn" @click="submit" class="transparent" v-text="t( 'contactus_btn_send_message' )" />
         </div>
     </section>
 </template>

@@ -47,7 +47,5 @@ if( import.meta.env.PROD ) {
 } 
 
 export default async function( Application : any ) {
-    Application.use(install, {
-        sitekey: "6LfrsfUqAAAAAEcZO4hKns0w3kwRsswvhsAnEx4D",
-    })
+    Application.use(install, { sitekey: "6LcGu_UqAAAAAOK4JsQYZHp_b1jjjsj4WXR6hXax" })
 }
